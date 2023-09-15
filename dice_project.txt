@@ -1,0 +1,13 @@
+import random  
+min = 1
+max = 6
+def Roll_dice() :
+  while True:
+    result= random.randint(min, max)
+    print(f"you rolled a {result}")
+    again = input("do you want to roll again (y/n)")
+    if again != "y":
+        break 
+Roll_dice()
+print('Thanks for the play')
+ 
